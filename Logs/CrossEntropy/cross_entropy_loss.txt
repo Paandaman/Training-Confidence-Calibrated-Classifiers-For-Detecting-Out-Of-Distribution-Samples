@@ -1,0 +1,2 @@
+Classification Accuracy on test set: 70.18%
+Detection Accuracy(Joint Confidence Loss): 70.75%
