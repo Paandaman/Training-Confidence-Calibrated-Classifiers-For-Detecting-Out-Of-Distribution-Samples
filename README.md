@@ -7,7 +7,7 @@ There are logs from two test runs runnings for 3500 gradient steps, one when onl
 
 Train the VGG13 classifier with Joint Confidence Loss (using DCGAN based GAN): ``` python3 main.py  ``` .
 This trains the networks using algorithm 1 from the paper and finally prints the results which in the paper can be seen in the bottom left corner of figure 4. That is, the Detection accuracy for the Joint Confidence Loss (blue bar) when CIFAR-10 is used as the In-distribution data and SVHN as the Out-of-Distribution data.  
-Training progress can be tracked be loading the logs saved in the directory specified by ``` --save_model ``` using TensorBoard.
+Training progress can be tracked by loading the logs saved in the directory specified by ``` --save_model ``` using TensorBoard.
 
 Train the VGG13 classifier with only Cross Entropy Loss (no GAN): ``` python3 main.py --use_confidence_loss 0 ``` .
 This prints the results which in the paper can be seen in the bottom left corner of figure 4. That is, the Detection accuracy for the Cross entropy loss (red bar) when CIFAR-10 is used as the In-distribution data and SVHN as the Out-of-Distribution data.
